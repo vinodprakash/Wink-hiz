@@ -1,0 +1,63 @@
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <div class="fl_left">
+      
+    </div>
+    <div class="fl_right">
+     
+    </div>
+  </div>
+</div>
+<div class="wrapper row1">
+  <header id="header" class="hoc clear">
+    <div id="logo"> 
+      <h1><a href="/"><img alt="" style="height: 80px;" src="/assets/full_logo.png"></a></h1>
+    </div>
+    <nav class="clear" id="mainav">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-custom" aria-controls="navbar-custom" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+            
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="clear">
+          <li class="<%= (params[:action] == 'index') ? 'active' : ''%>" style='font-size: 12px;'><a href="/">Home</a></li>
+          <li class="<%= (params[:action] == 'services') ? 'active' : ''%>" style='font-size: 12px;'><a href="/services">Services</a></li>
+          <li class="<%= (params[:action] == 'gallery') ? 'active' : ''%>" style='font-size: 12px;'><a href="/gallery">Gallery</a></li>
+          <li class="<%= (params[:action] == 'contact') ? 'active' : ''%>" style='font-size: 12px;'><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</div>
+
+
+
+
+<script type="text/javascript">
+  $("#backtotop").click(function () {
+  $("body,html").animate({
+  scrollTop: 0
+  }, 600);
+  });
+  $(window).scroll(function () {
+  if ($(window).scrollTop() > 150) {
+  $("#backtotop").addClass("visible");
+  } else {
+  $("#backtotop").removeClass("visible");
+  }
+  });
+//   // $('.basicslider').flexslider({
+//   // slideshow: false, // Change to "true" to make the slides slide automatically
+//   // animation: "slide",
+//   // animationLoop: false,
+//   // pauseOnHover: true,
+//   // controlNav: false,
+//   // directionNav: true,
+//   // prevText: "Prev",
+//   // nextText: "Next",
+//   // smoothHeight: true,
+//   // start: function(slider) {
+//   //   $('body').removeClass('loading');
+//   // }
+// });
+</script>
