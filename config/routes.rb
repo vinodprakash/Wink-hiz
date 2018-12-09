@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/contact' => 'home#contact'
   get '/about' => 'home#about'
   root 'home#index'
+  post '/customer_contact' => 'home#customer_contact'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

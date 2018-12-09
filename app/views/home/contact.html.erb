@@ -45,20 +45,20 @@
                     <!-- CONTACT FORM -->
                     <div class="contact-form wow fadeIn animated" data-wow-offset="10" data-wow-duration="1.5s">
                         <div id="message"></div>
-                        <form action="scripts/contact.php" class="form-horizontal contact-1" role="form" name="contactform" id="contactform">
+                        <form action="/customer_contact" method="post" remote="true" class="form-horizontal contact-1" role="form" name="contactform" id="contactform">
                             <div class="form-group">
                                 <div class="col-sm-6">
-                                    <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                                    <input type="text" class="form-control" name="Name" id="name" placeholder="Name">
                                 </div>
                                 <div class="col-sm-6">
-                                    <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+                                    <input type="text" class="form-control" name="Email" id="email" placeholder="Email">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-12">
                                     <input type="subject" class="form-control" id="subject" placeholder="Subject *">
                                     <div class="text_area">
-                                        <textarea style="height: 300px;" name="contact-message" id="msg" class="form-control" cols="30" rows="8" placeholder="Message"></textarea>
+                                        <textarea style="height: 300px;" name="Message" id="msg" class="form-control" cols="30" rows="8" placeholder="Message"></textarea>
                                     </div>
                                     <button type="submit" class="btn custom-btn" data-loading-text="Loading...">Send</button>
                                 </div>
