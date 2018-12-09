@@ -21,6 +21,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="clear">
           <li class="<%= (params[:action] == 'index') ? 'active' : ''%>" style='font-size: 12px;'><a href="/">Home</a></li>
+          <li class="<%= (params[:action] == 'about') ? 'active' : ''%>" style='font-size: 12px;'><a href="/about">About</a></li>
           <li class="<%= (params[:action] == 'services') ? 'active' : ''%>" style='font-size: 12px;'><a href="/services">Services</a></li>
           <li class="<%= (params[:action] == 'gallery') ? 'active' : ''%>" style='font-size: 12px;'><a href="/gallery">Gallery</a></li>
           <li class="<%= (params[:action] == 'contact') ? 'active' : ''%>" style='font-size: 12px;'><a href="/contact">Contact</a></li>
