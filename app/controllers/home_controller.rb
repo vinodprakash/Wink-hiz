@@ -16,7 +16,6 @@ class HomeController < ApplicationController
   end
 
   def customer_contact
-  	binding.pry
     customer_name = params['Name']
     email = params['Email']
     mobile = params['Mobile']
